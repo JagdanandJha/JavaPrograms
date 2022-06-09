@@ -1,0 +1,30 @@
+import java.util.Scanner;
+class Marksheet1
+{
+	public static void main(String...s)
+	{
+		int sum=0;
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Enter Your Name : ");
+		String name = sc.next();
+		
+		System.out.print("Enter Your Roll No marks : ");
+		int rollNo = sc.nextInt();
+		
+		int marks[] = new int[5];
+		System.out.print("Enter Your marks : ");
+		for(int i=0;i<=4;i++)
+		{
+		    marks[i] = sc.nextInt();
+			sum =sum+marks[i]; 
+		}
+		
+		int percentage = (sum*100)/500;
+		
+		System.out.println("Name : "+name);
+		System.out.println("Roll No : "+rollNo);
+		System.out.println("Percentage : "+percentage+" %");	
+		
+	}
+}
