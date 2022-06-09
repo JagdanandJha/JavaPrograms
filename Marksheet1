@@ -1,0 +1,36 @@
+import java.util.Scanner;
+class Marksheet1
+{
+	public static void main(String...s)
+	{
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Enter Your Name : ");
+		String name = sc.next();
+		
+		System.out.print("Enter Your Roll No marks : ");
+		int rollNo = sc.nextInt();
+		
+		System.out.print("Enter Your maths marks : ");
+		int math = sc.nextInt();
+		
+		System.out.print("Enter Your science marks : ");
+		int science = sc.nextInt();
+		
+		System.out.print("Enter Your English marks : ");
+		int english = sc.nextInt();
+		
+		System.out.print("Enter Your Hindi marks : ");
+		int hindi = sc.nextInt();
+		
+		System.out.print("Enter Your SST marks : ");
+		int sst = sc.nextInt();
+		
+		int percentage = ((math+science+sst+english+hindi)*100)/500;
+		
+		System.out.println("Name : "+name);
+		System.out.println("Roll No : "+rollNo);
+		System.out.println("Percentage : "+percentage+" %");	
+		
+	}
+}
