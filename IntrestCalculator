@@ -1,0 +1,20 @@
+import java.util.Scanner;
+
+class IntrestCalculator
+{
+	public static void main(String...s)
+	{
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Enter Principle Amount : ");
+		double principle = sc.nextDouble();
+		
+		System.out.print("Enter RateOfIntrest : ");
+		double rateOfIntrest = sc.nextDouble();
+		
+		System.out.print("Enter Time : ");
+		double time = sc.nextDouble();
+		
+		System.out.println("Your Intrest is : "+((principle*rateOfIntrest*time)/100));
+	}
+}
