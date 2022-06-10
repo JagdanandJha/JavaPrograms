@@ -1,0 +1,28 @@
+import java.util.Scanner;
+
+class Circle
+{
+	public static void main(String...s)
+	{
+		Scanner sc = new Scanner(System.in);
+		
+		System.out.print("Enter Radius of Circle : ");
+		double radius = sc.nextDouble();
+		
+		System.out.print("Enter Operation You Want To Perform use A for area and C for Circumference : ");
+		char operation = sc.next().charAt(0);
+		
+		switch(operation)
+		{
+			case 'A':
+				System.out.println("Area of Reactangle is : "+(3.14*radius*radius));
+				break;
+			
+			case 'C':
+				System.out.println("Area of Reactangle is : "+(2*(3.14*radius)));
+				
+			default:
+			System.out.println("Invalid Operator!");
+		}
+	}
+}
